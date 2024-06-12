@@ -1,0 +1,18 @@
+<img src="m1.jpg"id="imgId"width="1000px" height="425px">
+
+<script>
+    var imgArr=['m1.jpg','slide2.jpg','slide3.jpg']
+    var imgIndex=0
+    var imgId=document.getElementById("imgId")
+
+    function nextSlide(){
+        
+        if(imgIndex>=imgArr.length){
+            imgIndex=0
+        }
+        imgId.src=imgArr[imgIndex]
+        imgIndex++
+
+    }
+    setInterval(nextSlide,1000)
+</script>
